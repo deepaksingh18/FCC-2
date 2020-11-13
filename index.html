@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="survey-form.css">       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    
+    <body>
+            
+        <div class="container">
+
+            <header id="header">
+                <h1 id="title" align="center">Survey Form</h1>
+            <p id="description">Please tell your response about our website</p>
+            </header>
+
+            <div class="form">
+
+                <form id="survey-form" action="#">
+
+                    <div class="block">
+                        <h2>Personal Details</h2>
+                        <label id="name-label">Name :</label>
+                            <input
+                                type="text" 
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required><br><br>
+
+                        <label id="email-label">Email</label>
+                            <input 
+                                type="text" 
+                                id="email"
+                                name="email"
+                                placeholder="Enter email address"
+                                required><br><br>
+
+                        <label id="number-label">Age (optional) :</label>
+                            <input 
+                                type="text" 
+                                id="age"
+                                name="age"
+                                placeholder="Enter your Age"
+                                min="10"
+                                max="90">
+                    </div>
+
+                    <div class="block">
+                        <h2>Select your favourite language</h2>
+                        <select id="dropdown" required>
+                            <option disable selected value="Favourite Languages">Favourite Languages</option>
+                            <option value="html">html</option>
+                            <option value="css">css</option>
+                            <option value="jQuery">jQuery</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="php">php</option>
+                            <option value="python">python</option>
+                            <option value="C++">C++</option>
+                            <option value="SQL">SQL</option>
+                        </select>
+                        <br>
+                    </div>
+
+                    <div class="block">
+                        <h2>Choose your coding platform</h2>
+                        <label>
+                            <input 
+                                name="choice"
+                                value="Android"
+                                type="radio"
+                                checked>
+                                Android
+                        </label>
+                        <label>
+                            <input 
+                                name="choice"
+                                value="PC"
+                                type="radio">
+                                PC
+                        </label>
+                        <label>
+                            <input 
+                                name="choice"
+                                value="Tablet"
+                                type="radio">
+                                Tablet
+                        </label>
+                        <label>
+                            <input 
+                                name="choice"
+                                value="iOS"
+                                type="radio">
+                                iOS
+                        </label>
+                    </div>
+
+                    <div class="block">
+                        <h2>Your Favourite Projects</h2>
+                        <label>
+                            <input 
+                                name="check"
+                                value="1"
+                                type="checkbox">
+                                Tribute Page
+                        </label>
+                        <label>
+                            <input 
+                                name="check"
+                                value="2"
+                                type="checkbox">
+                                Survey Form
+                        </label>
+                        <label>
+                            <input 
+                                name="check"
+                                value="3"
+                                type="checkbox">
+                                Responsive Website
+                        </label>
+                    </div>
+
+                    <div class="block">
+                        <h2>Any comments/suggestions !</h2>
+                        <textarea
+                                id="comments"
+                                class="seggest"
+                                name="comments"
+                                placeholder="Enter suggestions">
+                        </textarea>
+                    </div>
+
+                    <footer id="footer">
+                        <br><button id="submit"  type="submit">
+                            Submit
+                        </button>
+                        <br><button id= "reset" type="reset" value="Reset">Reset</button>
+                    </footer>
+
+               </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
